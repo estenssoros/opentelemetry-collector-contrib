@@ -56,6 +56,7 @@ comparable AWS X-Ray Daemon configuration values.
 | Name                         | Description                                                                                                        | Default |
 |:-----------------------------|:-------------------------------------------------------------------------------------------------------------------| ------- |
 | `num_workers`                | Maximum number of concurrent calls to AWS X-Ray to upload documents.                                               | 8       |
+| `timeout`                    | Time limit for exporting one batch, including every PutTraceSegments call and its retries.                         | 5s      |
 | `endpoint`                   | Optionally override the default X-Ray service endpoint.                                                            |         |
 | `request_timeout_seconds`    | Number of seconds before timing out a request.                                                                     | 30      |
 | `max_retries`                | Maximun number of attempts to post a batch before failing.                                                         | 2       |
